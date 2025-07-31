@@ -50,13 +50,13 @@ THUNK SEPETİ is a fully responsive e-commerce shopping cart application built w
 3. Start the JSON server:
 
    ```bash
-   npx json-server --watch db.json --port 5000
+   npm run server
    ```
 
 4. Run the React app:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
 ---
