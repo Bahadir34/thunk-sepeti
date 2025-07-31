@@ -446,36 +446,28 @@
   ],
   "cart": [
     {
-      "id": "42",
-      "title": "Adana Kebap",
-      "price": 12.99,
-      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLbGjQUtzEDL82iId1PUW8Eq9B4dWKsNfjwQ&s",
+      "id": "1",
+      "title": "Izgara Somon",
+      "price": 45.99,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ttdQRLrjvoQteH2-Wlzj4f87DUmTVuEJmQ&s",
       "restaurantId": "1",
-      "amount": 1
+      "amount": 3
     },
     {
-      "id": "310",
-      "title": "Köri Tavuk",
-      "price": 16.99,
-      "photo": "https://i.nefisyemektarifleri.com/2023/03/13/cok-lezzetli-korili-kremali-tavuk-tarifi-baska-tarif-aramayin-videolu-6.jpg",
+      "id": "3",
+      "title": "Tavuk Kebabı",
+      "price": 17.99,
+      "photo": "https://i.lezzet.com.tr/images-xxlarge-recipe/tavuk-kebabi-971f9aac-58c0-4432-9ecd-46b549f0edb0.jpg",
       "restaurantId": "1",
-      "amount": 1
+      "amount": 2
     },
     {
-      "id": "314",
-      "title": "Kuzu Tandır",
-      "price": 24.99,
-      "photo": "https://picsum.photos/215",
-      "restaurantId": "2",
-      "amount": 1
-    },
-    {
-      "id": "111",
+      "id": "11",
       "title": "Mevsim Salata",
       "price": 7.99,
-      "photo": "https://picsum.photos/212",
-      "restaurantId": "2",
-      "amount": 1
+      "photo": "https://picsum.photos/210",
+      "restaurantId": "4",
+      "amount": 2
     }
   ]
 }

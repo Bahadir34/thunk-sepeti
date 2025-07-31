@@ -9,7 +9,6 @@ export const getBasket = () => (dispatch) => {
   api
     .get("/cart")
     .then((res) => {
-      console.log("BASKET : ", res.data);
       dispatch({ type: ACTION_TYPES.BASKET_SUCCESS, payload: res.data });
     })
     .catch((err) =>
@@ -39,4 +38,22 @@ export const createItem = (product) => (dispatch) => {
     .catch((err) => alert("Something went wrong!"));
 };
 
-export const updateItem = () => (dispatch) => {};
+export const updateItem = (id, newAmount) => (dispatch) => {
+  api
+    .patch(`/cart/${id}`, { amount: newAmount })
+    .then((res) =>
+      dispatch({ type: ACTION_TYPES.UPDATE_ITEM, payload: res.data })
+    )
+    .catch((err) =>
+      dispatch({ type: ACTION_TYPES.BASKET_ERROR, payload: err.message })
+    );
+};
+
+export const deleteItem = (id) => (dispatch) => {
+  api
+    .delete(`/cart/${id}`)
+    .then(() =>
+      dispatch({ type: ACTION_TYPES.REMOVE_FROM_BASKET, payload: id })
+    )
+    .catch((err) => alert("Sepetten eleman silerken sorun olustu"));
+};

@@ -1,12 +1,80 @@
-# React + Vite
+# THUNK SEPETİ 🛒
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+THUNK SEPETİ is a fully responsive e-commerce shopping cart application built with **React** and **json-server**. It is designed to simulate an online shopping experience and demonstrates the use of **Redux Thunk** for asynchronous state management.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Technologies & Libraries Used
 
-## Expanding the ESLint configuration
+- **React**
+- **React Router DOM**
+- **React Redux**
+- **Redux**
+- **Redux Thunk**
+- **Axios**
+- **React Icons**
+- **React Toastify**
+- **uuid**
+- **Tailwind CSS**
+- **json-server**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Features
+
+- Add, remove, and update products in the cart
+- Toast notifications for user actions
+- Asynchronous data fetching via Redux Thunk
+- Local mock backend using json-server
+- Fully responsive layout
+- Clean and intuitive UI
+- Organized folder structure
+
+---
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Bahadir34/thunk-sepeti.git
+   cd thunk-sepeti
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the JSON server:
+
+   ```bash
+   npx json-server --watch db.json --port 5000
+   ```
+
+4. Run the React app:
+
+   ```bash
+   npm start
+   ```
+
+---
+
+## 🖼️ Project Views
+
+![](./public/project-views/thunk-sepeti-desktop.png)
+![](./public/project-views/thunk-sepeti-mobile.png)
+![](./public/project-views/thunk-sepeti.gif)
+
+## 📌 Notes
+
+- This project is **not for commercial use**.
+- It is built purely for educational and personal development purposes.
+- The design is mobile-first and responsive across all screen sizes.
+
+---
+
+## 📫 Contact
+
+GitHub: [Bahadir34](https://github.com/Bahadir34)

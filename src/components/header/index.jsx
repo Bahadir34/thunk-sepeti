@@ -28,7 +28,7 @@ const Header = () => {
             className="px-3 py-2 hover:bg-red-100 transition flex items-center   rounded-full gap-2"
           >
             <BiBasket />
-            {/*  <span>{basket?.reduce((total, el) => total + el.amount, 0)}</span> */}
+            <span>{basket?.reduce((total, el) => total + el.amount, 0)}</span>
           </Link>
         </div>
       </div>

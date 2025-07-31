@@ -14,8 +14,8 @@ const Cart = () => {
     <div className="container">
       <h1 className="text-2xl font-bold mb-5">SEPET</h1>
 
-      <div>
-        <div>
+      <div className="flex gap-3 max-lg:flex-col">
+        <div className="flex-[5]">
           {isLoading ? (
             <Loader />
           ) : error ? (
@@ -26,7 +26,9 @@ const Cart = () => {
             basket.map((item) => <Card item={item} key={item.id} />)
           )}
         </div>
-        <OrderBox cart={basket} />
+        <div className=" flex-[2]">
+          <OrderBox cart={basket} />
+        </div>
       </div>
     </div>
   );

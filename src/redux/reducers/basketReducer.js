@@ -22,6 +22,18 @@ const basketReducer = (state = initialState, action) => {
 
     case ACTION_TYPES.CREATE_ITEM:
       return { ...state, basket: state.basket.concat(action.payload) };
+
+    case ACTION_TYPES.UPDATE_ITEM:
+      const updatedBasket = state.basket.map((item) =>
+        item.id === action.payload.id ? action.payload : item
+      );
+      return { ...state, basket: updatedBasket };
+
+    case ACTION_TYPES.REMOVE_FROM_BASKET:
+      const newBasket = state.basket.filter(
+        (item) => item.id !== action.payload
+      );
+      return { ...state, basket: newBasket };
     default:
       return state;
   }

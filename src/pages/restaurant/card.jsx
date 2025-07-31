@@ -12,8 +12,9 @@ const Card = ({ product }) => {
 
   const basketItem = basket.find((item) => item.id === product.id);
   const handleAdd = () => {
+ 
     basketItem
-      ? dispatch(updateItem(basketItem.id, basket.amount + 1))
+      ? dispatch(updateItem(basketItem.id, basketItem.amount + 1))
       : dispatch(createItem(product));
   };
 
@@ -21,12 +22,7 @@ const Card = ({ product }) => {
     <div className="grid grid-cols-[1fr_115px] gap-3 border shadow p-3 rounded-lg hover:bg-red-100 hover:scale-[1.02] cursor-pointer transition duration-300">
       <div className="flex flex-col justify-between">
         <div>
-          <Link
-            to={`/restaurant/${product.restaurantId}`}
-            className="text-xl font-semibold"
-          >
-            {product.title}
-          </Link>
+          <p className="text-xl font-semibold">{product.title}</p>
           <p>{product.desc}</p>
         </div>
         <p className="text-lg font-semibold">{product.price}₺</p>
